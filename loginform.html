@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="BS/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/loginformStyle.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <div class="text-center mt-5 border border-primary shadow">
+        <img class="logo mt-5" src="img/user.png" height="70px">
+        <form style="max-width: 300px; margin: auto;" action="loginsession.php" method="POST">
+            <h4 class="mt-3 mb-3">Silahkan Login</h4>
+            <input type="text" name="username" class="form-control" placeholder="Username">
+            <input type="password" name="password" class="form-control mt-2" placeholder="Password">
+            <div class="checkbox mt-3">
+                <input type="checkbox" value="remember-me"> Remember Me
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 w-100 mb-2 tombol">Login</button>
+            <p class="mt-2 fs-6">OR</p>
+            <a href="index.html" type="submit" class="btn btn-danger w-100 mb-3 tombol">Login as Guest</a>
+            <p class="mt-2 fs-6">Tidak punya akun?</p>
+            <a href="addAdmin.html" type="submit" class="mt-2 btn btn-success w-100 mb-4 tombol">Sign In</a>
+        </form>
+    </div>
+
+    <script src="BS/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

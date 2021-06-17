@@ -1,361 +1,546 @@
-*{
-	padding: 0;
-	margin: 0;
-	font-family:  sans-serif;
-	
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
 }
+
 a {
-	color: inherit;
-	text-decoration: none;
+    /*settingan properti teks header == SMARIPULANG & PILIHAN*/
+    color: inherit;
+    text-decoration: none;
 }
+
 .namapanjang {
-	padding: 8px 0;
-	background-color:#9404C8 ;
-	font-size: 10px ;
+    /*settingan header paling atas yang teks kecil*/
+    padding: 8px 0;
+    /*jarak atas bawah teks header kecil paling atas*/
+    background-color: #2A46F5;
+    /*warna background*/
+    font-size: 10px;
+    /*ukuran font*/
 }
+
 p1 {
-	color: #fff;
+    /*settingan warna teks header paling atas paling kecil*/
+    color: #fff;
 }
+
 .container {
-	width: 80%;
-	margin: 0 auto;
+    /*settingan container dasar*/
+    width: 80%;
+    /*ukuran lebar container*/
+    margin: 0 auto;
+    /*settingan agar container terletak di tengah */
 }
+
 .container:after {
-	content: '';
-	display: block;
-	clear: both;
+    /*settingan container bisa di tindih*/
+    content: '';
+    display: block;
+    clear: both;
+    /*settingan kosongkan element kiri kanan setelah batas kiri kanan kontainer*/
 }
-header h1{
-	display: inline-block;
-	padding: 15px 0;
-	float: left;
-	color: #9404C8;
+
+header h1 {
+    /*settingan header */
+    padding: 15px 0;
+    /*settingan jarak smaripulang dengan atas bawahnya */
+    float: left;
+    /*settingan agar tulisan smaripulang di sebelah kiri */
+    color: #2A46F5;
+    /*warna teks smaripulang */
 }
-header ul{
-	float: right;
+
+header ul {
+    /*settingan agar list home - contact di kanan*/
+    float: right;
 }
-header ul li{
-	display: inline-block;
+
+header ul li {
+    /*settingan agar list home - contact lurus ke kanan*/
+    display: inline-block;
 }
-header ul li a{
-	padding: 25px 20px;
-	display: inline-block;
+
+header ul li a {
+    /*settingan teks list home - contact*/
+    padding: 25px 20px;
+    /*settingan jarak atas bawah list home - contact lurus*/
+    display: inline-block;
+    /*settingan agar teks block ke tengah*/
 }
+
 header ul li a:hover {
-	background-color:#9404C8 ;
-	color: #fff;
-	border-radius: 5px;
+    /*settingan warna list home - contact ketika disentuh kursor*/
+    background-color: #2A46F5;
+    color: #fff;
+    border-radius: 10px;
 }
+
 .active {
-	background-color:#9404C8 ;
-	color: #fff;
+    /*settingan keterangan bahwa user sedang di home(misalnya)*/
+    background-color: #2A46F5;
+    color: #fff;
+    border-radius: 10px;
 }
+
 .banner {
-	height: 70vh;
-	background-image: url(../img/ilus11copy3.jpg) ;
-	background-size: 1370px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    /*settingan banner gambar sekolah*/
+    height: 70vh;
+    background-image: url(../img/ilus11copy3.jpg);
+    background-size: 1370px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /*agar content di dalam banner tepat di tengah secara vertikal*/
+    align-items: center;
+    /*agar content di dalam banner tepat di tengah secara horizontal*/
 }
-.banner:after{
-	content:'';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(178, 6, 240, .3);
+
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(54, 78, 230, .1);
 }
+
 .banner h2 {
-	color: #fff;
-	z-index: 1;
-	padding: 20px 25px;
-	border: 3px solid #fff;
+    /*settingan teks di tengah(beserta bordernya)*/
+    color: #fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
 }
+
 .banner h2:hover {
-	background-color: rgba(178, 6, 240, 0.5);
+    /*warna background apabila teks ditengah disentuh kursor*/
+    background-color: rgba(54, 78, 230, 0.5);
 }
+
 section {
-	padding: 50px 0;
+    /*jarak antar section atas bawah*/
+    padding: 50px 0;
 }
+
 section h3 {
-	text-align: center;
-	padding: 20px 0 ;
-	color: #9404C8;
-	margin-bottom: 25px;
+    /*settingan jarak atas bawah, warna, posisi, dan jarak bawah teks h3*/
+    text-align: center;
+    /*posisi tengah*/
+    padding: 20px 0;
+    /*jarak dalam atas*/
+    color: #2A46F5;
+    /*warna*/
+    margin-bottom: 25px;
+    /*jarak luar bawah*/
 }
+
 .about p {
-	color: black;
-	text-align: justify;
-	word-spacing: 2px;
-	line-height: 25px;
+    /*settingan paragraf about*/
+    color: #666;
+    /*setting warna*/
+    text-align: justify;
+    /*setting align teks*/
+    word-spacing: 2px;
+    /*setting jarak spasi*/
+    line-height: 25px;
+    /*setting jarak ke bawah*/
 }
-.about, .service {
-	padding-bottom: 40px;
+
+.about,
+.service {
+    /*settingan jarak dalam bawah teks */
+    padding-bottom: 40px;
 }
+
 .box {
-	color:#9404C8 ;
-
+    /*settingan warna box icon keterangan pelayanan di index*/
+    color: #2A46F5;
 }
+
 .box .col-4 {
-	width:25%;
-	padding: 20px;
-	margin: 0 43.5px;
-	box-sizing: border-box;
-	text-align: center;
-	float:left;
-}
-.icon {
-	width: 70px;
-	height: 70px;
-	border: 1px solid;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 70px;
-	font-size: 20px;
-	margin: 0 auto;
-}
-.box .col-4 h4 {
-	margin: 20px 0;
-	font-size: 15px;
-}
-footer {
-	padding: 10px 0;
-	margin-bottom: 0;
-	background-color: #333;
-	color: white;
-	text-align: center;
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-}
-.bg-loader {
-	background-color: #eee;
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 9999;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.bg-loader .loader {
-	width: 80px;
-	height: 80px;
-	border: 3px solid #fff;
-	border-radius: 50% ;
-	border-top-color:#9404C8 ;
-	border-right-color:#9404C8 ;
-	border-bottom-color:#9404C8 ;
-	animation: rotate .6s linear infinite ;
-}
-.label { 
-	background-color: #9404C8;
-	padding: 8px 0;
-}
-.label .container p {
-	color: #fff;
-	font-size: 15px;
+    /*settingan jarak kolom di luar bundar icon*/
+    width: 25%;
+    /*lebar kolom*/
+    padding: 20px;
+    /*jarak dalam kanan kiri*/
+    margin: 0 43.5px;
+    /*jarak luar kanan kiri*/
+    box-sizing: border-box;
+    text-align: center;
+    /*menengahkan teks*/
+    float: left;
+    /*memposisikan agar objek me list ke kanan*/
 }
 
-.about .container img {
-	display: block;
-	margin: auto;
-	padding-bottom: 70px;
+.icon {
+    /*settingan bundaran icon*/
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 auto;
+    /*jarak luar atas bawah 0 kiri kanan otomatis*/
 }
-.about .container p{
-	padding-bottom: 50px;
+
+.box .col-4 h4 {
+    /*settingan teks dibawah icon*/
+    margin: 20px 0;
+    /*jarak luar atas bawah teks*/
+    font-size: 15px;
+    /*ukr font*/
 }
-.about .container ol li {
-	color: black;
-	text-align: justify;
-	word-spacing: 2px;
-	line-height: 25px;
+
+footer {
+    /*settingan footer*/
+    padding: 10px 0;
+    /*jarak dalam footer (batas garis dengan teks)*/
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    /*posisi teks fix*/
+    left: 0px;
+    /*jarak kanan objek dengan batas paling kanan*/
+    right: 0px;
+    /*jarak kanan objek dengan batas paling kiri*/
+    bottom: 0px;
+    /*jarak kanan objek dengan batas paling bawah*/
 }
-.about .container .visi {
-	text-align: center;
+
+.bg-loader {
+    /*settingan background loading*/
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    /*settingan index diatas objek manapun*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.about .container .p-about {
-	text-align: center;
-}
-.contact .container .container-contact {
-	border: 3px dashed; #666;
-	background-color: rgba(178, 6, 240, 0.1);
-	border-radius: 20px;
-	margin-right: 320px;
-	margin-left: 320px;
-	margin-bottom: 130px;
-	padding: 20px 70px;
-}
-.contact .container p{
-	padding: 20px 0;
-	font-size: 17px;
-	color: black;
-	font-weight: bold;
-}
-.contact .container i {
-	font-size: 23px;
-	margin-right: 20px;
-}
-.contact .container .container-contact a:hover {
-	color: #9404C8;
-}
-.contact .container img {
-	display: block;
-	margin: auto;
-	padding-bottom: 35px;
+
+.bg-loader .loader {
+    /*settingan bundar loading*/
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #2A46F5;
+    /*sett warna atas*/
+    border-right-color: #2A46F5;
+    /*sett warna kanan*/
+    border-bottom-color: #2A46F5;
+    /*sett warna bawah*/
+    animation: rotate .6s linear infinite;
+    /*sett animasi berputar*/
 }
 
 @keyframes rotate {
-	100%{
-		transform: rotate(360deg);
-	}
+    /*sett perputaran (animasi)*/
+    100% {
+        transform: rotate(360deg);
+    }
 }
-iframe {
-	margin-bottom: 50px;
+
+.label {
+    /*settingan keterangan label alamat saat ini (Home / ...)*/
+    background-color: #2A46F5;
+    padding: 8px 0;
+    /*jarak dalam atas bawah*/
 }
-.container-login1 { 
-	position: absolute;
-	width: 300px;
-	height: 350px;
-	margin: auto;
-	background-color: rgba(250, 250, 250, .47);
-	border-radius: 20px;
-	z-index: 2;
-	box-shadow: 1px 2px 9px black; /* x y z || horizontal, vertikal, tingkat blur, warna */
+
+.label .container p {
+    /*settingan teks label*/
+    color: #fff;
+    font-size: 15px;
 }
+
+.about .container img {
+    /*settingan gambar di atas teks about*/
+    display: block;
+    margin: auto;
+    padding-bottom: 70px;
+    /*jarak dalam bawah*/
+}
+
+.about .container p {
+    padding-bottom: 50px;
+}
+
+.about .container ol li {
+    /*settingan teks yang ber list (misi dan tujuan)*/
+    color: #666;
+    text-align: justify;
+    word-spacing: 2px;
+    /*jarak spasi antar teks*/
+    line-height: 25px;
+    /*jarak per baris teks ke bawah*/
+}
+
+.about .container .visi {
+    /*settingan tengah deskripsi teks visi*/
+    text-align: center;
+}
+
+.about .container .p-about {
+    /*settingan tengah deskripsi teks about*/
+    text-align: center;
+}
+
+.contact .container .container-contact {
+    /*settingan container contact*/
+    background-color: rgba(255, 255, 255, 0.3);
+    /*warna background beserta opasitasnya*/
+    border-radius: 10px;
+    margin-right: 320px;
+    /*jarak luar kanan*/
+    margin-left: 320px;
+    /*jarak luar kiri*/
+    margin-bottom: 130px;
+    /*jarak luar atas*/
+    padding: 20px 70px;
+    /*jarak dalam atas bawah 20 kiri kanan 70*/
+    box-shadow: 1px 1px 4px black;
+    /*sett bayangan kotak*/
+}
+
+.contact .container p {
+    /*settingan teks dalam kontainer kontak*/
+    padding: 20px 0;
+    /*jarak dalam atas bawah*/
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    /*gaya font tebal*/
+}
+
+.contact .container i {
+    /*settingan icon dalam kontainer kontak*/
+    font-size: 23px;
+    margin-right: 20px;
+    /*jarak luar kanan*/
+}
+
+.contact .container .container-contact a:hover {
+    /*settingan jika teks dalam kontainer kontak disentuh kursor*/
+    color: #2A46F5;
+}
+
+.contact .container iframe {
+    /*settingan g maps*/
+    border-radius: 10px;
+    /*sudut*/
+    margin-bottom: 50px;
+    /*jarak bawah*/
+}
+
+.container-login1 {
+    /*settingan container login*/
+    width: 300px;
+    /*lebar*/
+    height: 350px;
+    /*tinggi*/
+    background-color: rgba(0, 0, 0, .19);
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 1px 2px 10px black;
+    /* x y z || horizontal, vertikal, tingkat blur, warna */
+}
+
+#bg-contact {
+    /*settingan background contact*/
+    background-image: url(../img/iluspergisekolah.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px 750px;
+    background-color: rgba(22, 185, 246, .3);
+}
+
 .banner .container-login1 p {
-	padding-top:30px;
-	text-align: center;
-	color: #9404C8;
-	font-size: 25px;
-	font-family: sans-serif;
-	z-index: 3;
-	font-weight: bold;
+    /*settingan teks login admin*/
+    padding-top: 30px;
+    /*batas dalam atas*/
+    text-align: center;
+    color: #0B37FF;
+    text-shadow: 1px 1px 3px #fff;
+    font-size: 25px;
+    font-family: "Copperplate";
+    z-index: 3;
+    /*mengatur indeks di atas objek*/
+    font-weight: bold;
 }
+
 form {
-	position: absolute;
-	margin: 40px 55px;
+    /*settingan form */
+    position: absolute;
+    margin-right: 55px;
+    margin-left: 55px;
+    margin-top: 55px;
+    margin-bottom: 40px;
 }
+
 label {
-	font-family: "garamond";
-	font-size: 20px;
-	color: #211113;
-	font-weight: bold;
-	letter-spacing: 1px;
+    /*settingan label form (teks username dan password)*/
+    font-family: "Desdemona";
+    font-size: 20px;
+    color: #E4EAF5;
+    font-weight: bold;
+    letter-spacing: 0px;
 }
-.inputuser{
-	border: 0px;
-	height: 30px;
-	border-radius: 15px;
-	box-shadow: 1px 1px 2px black;
-	margin-top: 10px;
-	margin-bottom: 25px;
-	padding: 0 10px;
-	background-color: rgba(238, 204, 238, 1);
+
+.inputuser {
+    /*settingan kolom input*/
+    border: 0px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    background-color: rgba(238, 204, 238, 1);
 }
+
 .submit {
-	height: 30px;
-	width:70px;
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	border: 0px;
-	border-radius: 15px;
-	background: linear-gradient(to right, #F95DF9,#F69CF6);
-	box-shadow: 1px 1px 2px black;
+    /*settingan button login*/
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    margin: auto;
+    /*setting agar teks ditengah*/
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+    border: 0px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #153E81, #2F7AF5);
+    /*gradien warna background*/
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
 }
+
+.submitgagal {
+    /*settingan button login (jika login gagal)*/
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    margin: auto;
+    /*setting agar teks ditengah*/
+    left: 0;
+    right: 0;
+    margin-top: 47px;
+    border: 0px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #153E81, #2F7AF5);
+    /*gradien warna background*/
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+
 .submit:hover {
-	color: white;
+    /*setting pada saat submit disentuh kursor*/
+    color: white;
 }
+
+.submitgagal:hover {
+    /*setting pada saat login gagal, submit disentuh kursor*/
+    color: white;
+}
+
 p2 {
-	font-size: 14px;
-	color: black;
-	font-weight: bold;
-	z-index: 3;
-	letter-spacing: .5px;
+    /*settingan teks gagal login*/
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    z-index: 3;
+    letter-spacing: .5px;
 }
+
 .container-gagal {
-	height: 40px;
-	width: 300px;
-	margin-top: -63px;
-	z-index: 3;
-	padding: 8px 0;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: rgba(248, 0, 26, .4);
-	border-radius: 10px;
+    /*settingan container gagal login*/
+    height: 40px;
+    width: 300px;
+    margin-top: -63px;
+    z-index: 3;
+    padding: 8px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(248, 0, 26, .4);
+    border-radius: 10px;
 }
-#header2 ul li{
-	display: inline-block;
-	padding: 5px 10px;
-	background-color: #15A6FF;
-	margin: 3px 5px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 1px #666;
-	font-weight: bold;
-	color: #021825;
+
+#header2 ul li {
+    /*settingan header di pelayanan*/
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #15A6FF;
+    margin: 3px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #666;
+    font-weight: bold;
+    color: #021825;
 }
+
 #header2 ul li:hover {
-	display: inline-block;
-	padding: 5px 10px;
-	background-color: #021825;
-	margin: 3px 5px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 1px #666;
-	font-weight: bold;
-	color: #15A6FF;
+    /*settingan warna header di pelayanan ketika disentuh cursor*/
+    background-color: #021825;
+    color: #15A6FF;
 }
+
 #header2 ul .active-service {
-	background-color: #021825;
-	color: #15A6FF;
+    /*settingan keterangan alamat user header di pelayanan (di list siswa misal)*/
+    background-color: #021825;
+    color: #15A6FF;
 }
-#header2 ul{
-	display: inline-block;
-	border-radius: 5px;
-	border-bottom: 2px solid;
-	border-top: 2px solid;
-	padding: 5px 0;
+
+#header2 ul {
+    /*settingan border di atas dan dibawah header di pelayanan*/
+    display: inline-block;
+    border-radius: 5px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding: 5px 0;
+    /*jarak dalam atas bawah 5 dan kiri kanan 0*/
 }
-body {
-	background: linear-gradient(to right, #8EACF7, #497CFA);
-}
+
 header {
-	background-color: #fff;
+    /*settingan warna background header di pelayanan*/
+    background-color: #fff;
 }
+
 #daftar {
-	text-align: left;
-	padding: 50px 0 ;
-	color: black;
-	margin-bottom: 25px;
+    /*settingan teks keterangan di pelayanan di bawah header (list siswa misal)*/
+    text-align: left;
+    padding: 50px 0;
+    color: black;
+    margin-bottom: 25px;
 }
-#header2 p {
-	word-spacing: 1px;
-	font-size: 15px;
-	font-family: monospace;
-}
+
 .loginAdm {
-	border: 0px;
-	box-shadow: 1px 1px 2px black;
-	height: 25px;
-	width:100px;
-	position: relative;
-	left: 1200px;
-	margin-bottom: 75px;
-	font-size: 14px;
-	text-align: center;
-	border-radius: 5px;
-	background-color: #037DC4;
-	color: #fff;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    height: 25px;
+    width: 100px;
+    position: relative;
+    left: 1050px;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #037DC4;
+    color: #fff;
 }
+
 .loginAdm:hover {
-	background-color: #fff;
-	color: #037DC4;
+    background-color: #fff;
+    color: #037DC4;
 }

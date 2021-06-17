@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.border {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.tombol {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
