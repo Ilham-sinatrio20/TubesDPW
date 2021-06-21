@@ -1,19 +1,20 @@
 <?php 
     include "connector.php";
 
-    $email = $_GET['email'];
-    $nama = $_GET['nama'];
-    $username = $_GET['username'];
-    $password = $_GET['password'];
-    $alamat = $_GET['alamat'];
-    $kota = $_GET['kota'];
-    $gender = $_GET['gender'];
-    $telp = $_GET['no_telp'];
+    $email = $_POST['email'];
+    $nama = $_POST['nama'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $alamat = $_POST['alamat'];
+    $gender = $_POST['gender'];
+    $telp = $_POST['no_telp'];
 
-    $query = "INSERT INTO admin VALUES('$email', '$nama', '$username', '$password', '$alamat', '$kota', '$gender', '$telp')";
+    $query = "INSERT INTO admin VALUES('$email', '$nama', '$username', '$password', '$alamat', '$gender', '$telp')";
     $result = mysqli_query($connect, $query);
 
     if($result){
-        echo "Data berhasil ditambahkan";
+        header("Location: http://localhost/TubesDPW/addAdmin.html");
+    } else {
+        header("Location: http://localhost/TubesDPW/addAdmin.html?error=Data belum lengkap atau masih salah");
     }
 ?>

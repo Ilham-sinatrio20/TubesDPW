@@ -1,0 +1,40 @@
+.border {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.input-siswa form {
+    margin: 50px auto;
+}
+
+.input-siswa form input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.teksinput {
+    margin: 30px auto;
+}
+
+label {
+    margin-top: 5px;
+}
+
+footer {
+    /*settingan footer*/
+    padding: 10px 0;
+    /*jarak dalam footer (batas garis dengan teks)*/
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    /*posisi teks fix*/
+    left: 0px;
+    /*jarak kanan objek dengan batas paling kanan*/
+    right: 0px;
+    /*jarak kanan objek dengan batas paling kiri*/
+    bottom: 0px;
+    /*jarak kanan objek dengan batas paling bawah*/
+}

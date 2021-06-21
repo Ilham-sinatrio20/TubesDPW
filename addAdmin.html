@@ -8,16 +8,47 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='BS/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/addAdminStyle.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <h3 class="container-fluid mt-3">Silahkan Isi Data dengan Benar</h3>
-    <div class="container-fluid">
+    <!--loader-->
+    <div class="bg-loader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <!--header-->
+    <div class="namapanjang">
+        <div class="container">
+            <p1>OFFICIAL WEBSITE OF SMAN NEGERI PULAKANDANG</p1>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">SMARIPULANG</a></h1>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="servicedefault.php"><b>PELAYANAN</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+                <li class="active"><a href="loginform.html"><b>LOGIN</b></a></li>
+            </ul>
+    </header>
+    <!---contact--->
+    <section class="label" style="height: 37px; margin-top: -17px;">
+        <div class="container">
+            <p>Home / Login</p>
+        </div>
+    </section>
+    <h3 class="container mt-3">Silahkan Isi Data dengan Benar</h3>
+    <div class="container">
         <div class="line"></div>
     </div>
     <div class="mt-4 d-flex justify-content-center">
-        <form class="row g-3 container-fluid mt-3 border border-primary shadow" action="prosesInput.php" method="GET" style="max-width: 850px;">
+        <form class="row g-3 container-fluid mt-3 border border-primary shadow" action="prosesInput.php" method="POST" style="max-width: 850px;">
             <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" name="email" placeholder="E-Mail">
@@ -38,10 +69,6 @@
                 <label for="alamat" class="form-label">Alamat</label>
                 <input type="text" class="form-control" name="alamat" placeholder="Alamat">
             </div>
-            <div class="col-md-6">
-                <label for="kota" class="form-label">Kota</label>
-                <input type="text" class="form-control" name="kota" placeholder="Kota Asal">
-            </div>
             <div class="col-md-4">
                 <label for="gender" class="form-label">Jenis Kelamin</label>
                 <select name="gender" class="form-select">
@@ -52,7 +79,7 @@
             </div>
             <div class="col-md-2">
                 <label for="no_telp" class="form-label">No Telepon</label>
-                <input type="text" class="form-control" name="no_telp" placeholder="Nomor Telepon">
+                <input type="text" class="form-control" name="no_telp" placeholder="No. Telp">
             </div>
             <div class="col-12">
                 <div class="form-check">
@@ -64,9 +91,22 @@
             </div>
             <div class="col-12 mb-3">
                 <button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="loginform.html" type="submit" class="btn btn-danger">Back to Login Form</a>
             </div>
         </form>
     </div>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <small>Copryright &copy 2021 - All Right Reserved</small>
+        </div>
+    </footer>
+    <br><br><br>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".bg-loader").hide();
+        })
+    </script>
     <script src="BS/dist/js/bootstrap.min.js"></script>
 </body>
 

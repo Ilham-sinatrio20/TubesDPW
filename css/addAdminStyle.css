@@ -14,3 +14,158 @@
     background-color: #0D6EFD;
     height: 1px;
 }
+
+a {
+    /*settingan properti teks header == SMARIPULANG & PILIHAN*/
+    color: inherit;
+    text-decoration: none;
+}
+
+.namapanjang {
+    /*settingan header paling atas yang teks kecil*/
+    padding: 8px 0;
+    /*jarak atas bawah teks header kecil paling atas*/
+    background-color: #2A46F5;
+    /*warna background*/
+    font-size: 10px;
+    /*ukuran font*/
+}
+
+p1 {
+    /*settingan warna teks header paling atas paling kecil*/
+    color: #fff;
+}
+
+.container {
+    /*settingan container dasar*/
+    width: 80%;
+    /*ukuran lebar container*/
+    margin: 0 auto;
+    /*settingan agar container terletak di tengah */
+}
+
+.container:after {
+    /*settingan container bisa di tindih*/
+    content: '';
+    display: block;
+    clear: both;
+    /*settingan kosongkan element kiri kanan setelah batas kiri kanan kontainer*/
+}
+
+header h1 {
+    /*settingan header */
+    padding: 15px 0;
+    /*settingan jarak smaripulang dengan atas bawahnya */
+    float: left;
+    /*settingan agar tulisan smaripulang di sebelah kiri */
+    color: #2A46F5;
+    /*warna teks smaripulang */
+}
+
+header ul {
+    /*settingan agar list home - contact di kanan*/
+    float: right;
+}
+
+header ul li {
+    /*settingan agar list home - contact lurus ke kanan*/
+    display: inline-block;
+}
+
+header ul li a {
+    /*settingan teks list home - contact*/
+    padding: 25px 20px;
+    /*settingan jarak atas bawah list home - contact lurus*/
+    display: inline-block;
+    /*settingan agar teks block ke tengah*/
+}
+
+header ul li a:hover {
+    /*settingan warna list home - contact ketika disentuh kursor*/
+    background-color: #2A46F5;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.active {
+    /*settingan keterangan bahwa user sedang di home(misalnya)*/
+    background-color: #2A46F5;
+    color: #fff;
+    border-radius: 10px;
+}
+
+footer {
+    /*settingan footer*/
+    padding: 10px 0;
+    /*jarak dalam footer (batas garis dengan teks)*/
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    /*posisi teks fix*/
+    left: 0px;
+    /*jarak kanan objek dengan batas paling kanan*/
+    right: 0px;
+    /*jarak kanan objek dengan batas paling kiri*/
+    bottom: 0px;
+    /*jarak kanan objek dengan batas paling bawah*/
+}
+
+.bg-loader {
+    /*settingan background loading*/
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    /*settingan index diatas objek manapun*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loader .loader {
+    /*settingan bundar loading*/
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #2A46F5;
+    /*sett warna atas*/
+    border-right-color: #2A46F5;
+    /*sett warna kanan*/
+    border-bottom-color: #2A46F5;
+    /*sett warna bawah*/
+    animation: rotate .6s linear infinite;
+    /*sett animasi berputar*/
+}
+
+@keyframes rotate {
+    /*sett perputaran (animasi)*/
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.label {
+    /*settingan keterangan label alamat saat ini (Home / ...)*/
+    background-color: #2A46F5;
+    padding: 8px 0;
+    /*jarak dalam atas bawah*/
+}
+
+.label .container p {
+    /*settingan teks label*/
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    text-align: left;
+    position: absolute;
+}
+
+header {
+    /*settingan warna background header di pelayanan*/
+    background-color: #fff;
+}

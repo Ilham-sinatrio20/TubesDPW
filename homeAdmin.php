@@ -26,13 +26,13 @@
     </div>
     <header>
         <div class="container">
-            <h1><a href="index.html">SMARIPULANG</a></h1>
+            <h1><a href="homeAdmin.php">SMARIPULANG</a></h1>
             <ul>
-                <li class="active"><a href="index.html"><b>HOME</b></a></li>
-                <li><a href="listSiswa.php"><b>PELAYANAN</b></a></li>
-                <li><a href="about.html"><b>ABOUT</b></a></li>
-                <li><a href="contact.html"><b>CONTACT</b></a></li>
-                <li><a href="loginform.html"><b>LOGIN</b></a></li>
+                <li class="active"><a href="homeAdmin.php"><b>HOME</b></a></li>
+                <li><a href="servicedefault.php"><b>PELAYANAN</b></a></li>
+                <li><a href="aboutAdmin.html"><b>ABOUT</b></a></li>
+                <li><a href="contactAdmin.html"><b>CONTACT</b></a></li>
+                <li><a href="loginform.html"><b>LOGOUT</b></a></li>
             </ul>
     </header>
     <!--banner-->
@@ -44,7 +44,7 @@
     <section class="about">
         <div class="container">
             <h3>ABOUT</h3>
-            <p>SMA Negeri Pulakandang atau sering disebut <b>SMARIPULANG</b> merupakan salah satu SMA favorit di kabupaten Konoha. SMARIPULANG memiliki banyak prestasi dibidang akademik maupun non akademik. SMARIPULANG juga menyediakan sarana dan prasarana
+            <p>SMA Negeri Pulakandang atau sering disebut <b>SMARIPULANG</b> merupakan salah satu SMA favorit di kabupaten Konoha. SMARIPULANG memiliki banyak presatasi dibidang akademik maupun non akademik. SMARIPULANG juga menyediakan sarana dan prasarana
                 lengkap untuk memfasilitasi kegiatan siswa. Dengan sarana dan prasarana yang lengkap diharapkan siswa dapat mengoptimalkan kompetensi yang dimikinya baik disegi akademik maupun non akademik.</p>
         </div>
     </section>
@@ -56,26 +56,26 @@
             <div class="box">
                 <div class="col-4">
                     <div class="icon"><i class="fas fa-list"></i></div>
-                    <a href="listSiswa.php">
+                    <a href="servicedefault.php">
                         <h4>LIST SISWA</h4>
                     </a>
                 </div>
                 <div class="col-4">
                     <div class="icon"><i class="far fa-calendar-alt"></i></div>
-                    <a href="ppdb.php">
+                    <a href="jadwalppdb.php">
                         <h4>CEK JADWAL PPDB</h4>
                     </a>
                 </div>
                 <div class="col-4">
                     <div class="icon"><i class="fas fa-award"></i></div>
-                    <a href="siswapres.php">
+                    <a href="servicesiswapres.php">
                         <h4>LIST SISWA BERPRESTASI</h4>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
+    <br><br>
     <!--footer-->
     <footer>
         <div class="container">
@@ -88,6 +88,7 @@
             $(".bg-loader").hide();
         })
     </script>
+    <script src="BS/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

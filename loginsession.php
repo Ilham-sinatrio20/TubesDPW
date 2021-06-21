@@ -12,6 +12,10 @@
         session_start();
         $_SESSION['username'] = $username;
         $_SESSION['status'] = 'login';
-        echo "Anda berhasil login";
+            header("Location: http://localhost/TubesDPW/homeAdmin.php");
+    }
+    else {
+        $_SESSION['error']=true;
+            header("Location: http://localhost/TubesDPW/loginform.html?error=Username atau Password anda salah");
     }
 ?>

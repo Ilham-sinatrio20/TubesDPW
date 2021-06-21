@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="BS/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cssSiswa.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Hapus Daftar Siswa</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid" style="background-color: #2A46F5;">
+        <div class="container-fluid">
+            <img src="img/Admin.png" style="height: 40px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="adminpagedefault.html">Input Siswa</a>
+                    <a class="nav-link active" aria-current="page" href="adminpagedelete.html">Hapus Siswa</a>
+                    <a class="nav-link" href="adminpageupdate.html">Update Siswa</a>
+                    <a class="nav-link" href="editPPDB.html">PDB</a>
+                    <a class="nav-link" href="homeAdmin.php">Kembali ke Beranda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="input-siswa">
+        <div class="mt-5 border border-primary text-center">
+            <h3 class="teksinput">DELETE SISWA</h3>
+            <i class="fas fa-user-minus" style="font-size: 80px; margin-bottom:0px"></i>
+            <form style="max-width: 300px;" method="GET" action="deletesiswa.php">
+                <label for="induk" style="font-size: 15px;">Nomor Induk Siswa</label>
+                <input class="form-control" type="text" placeholder="Nomor Induk" id="induk" name="induk">
+                <button type="submit" class="btn btn-primary mt-4">Delete Data</button>
+            </form>
+        </div>
+    </section>
+    <br><br>
+    <footer>
+        <div class="container">
+            <small>Copryright &copy 2021 All Right Reserved</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

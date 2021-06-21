@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/cssSiswa.css" rel="stylesheet">
+    <link href="BS/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Tambah Daftar Siswa</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid" style="background-color: #2A46F5;">
+        <div class="container-fluid">
+            <img src="img/Admin.png" style="height: 40px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="adminpagedefault.html">Input Siswa</a>
+                    <a class="nav-link" href="adminpagedelete.html">Hapus Siswa</a>
+                    <a class="nav-link" href="adminpageupdate.html">Update Siswa</a>
+                    <a class="nav-link" href="editPPDB.html">PPDB</a>
+                    <a class="nav-link" href="homeAdmin.php">Kembali ke Beranda</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="input-siswa">
+        <div class="mt-5 border border-primary text-center">
+            <h3 class="teksinput">INPUT SISWA</h3>
+            <i class="fas fa-user-plus" style="font-size: 80px; margin-bottom:0px ;"></i>
+            <form style="max-width: 300px;" action="inputsiswa.php" method="POST">
+                <label for="induk" style="font-size: 15px;">Nomor Induk</label>
+                <input class="form-control" type="text" placeholder="Nomor Induk" id="induk" name="induk">
+                <label for="nama" style="font-size: 15px;">Nama Lengkap</label>
+                <input class="form-control" type="text" placeholder="Nama" id="nama" name="nama">
+                <label for="gender" class="form-label">Jenis Kelamin</label>
+                <select name="gender" class="form-select">
+                <option selected>Pilih...</option>
+                <option>Laki-Laki</option>
+                <option>Perempuan</option>
+                </select>
+                <label for="tanggallahir" style="font-size: 15px;" class="mt-4">Tempat Lahir</label>
+                <input class="form-control" type="text" placeholder="Tempat Lahir" id="tempatlahir" name="tempatlahir">
+                <label for="tanggallahir" style="font-size: 15px;">Tanggal lahir</label>
+                <input class="form-control" type="date" placeholder="Tanggal Lahir" id="tanggallahir" name="tanggallahir">
+                <label for="alamat" style="font-size: 15px;">Alamat</label>
+                <input class="form-control" type="text" placeholder="Alamat" id="alamat" name="alamat">
+                <label for="kecamatan" style="font-size: 15px;">Kecamatan</label>
+                <input class="form-control" type="text" placeholder="Kecamatan" id="kecamatan" name="kecamatan">
+                <label for="kab_kota" style="font-size: 15px;">Kab/Kota</label>
+                <input class="form-control" type="text" placeholder="Kab/Kota" id="kab_kota" name="kab_kota">
+                <label for="kelas" style="font-size: 15px;">Kelas</label>
+                <input class="form-control" type="text" placeholder="Kelas" id="kelas" name="kelas">
+                <label for="jurusan" style="font-size: 15px;">Jurusan</label>
+                <input class="form-control" type="text" placeholder="Jurusan" id="jurusan" name="jurusan">
+                <label for="level" style="font-size: 15px;">Level</label>
+                <input class="form-control" type="number" placeholder="Level" id="level" name="level">
+                <label for="prestasi" style="font-size: 15px;">Keterangan prestasi</label>
+                <input class="form-control" type="text" placeholder="Opsional" id="prestasi" name="prestasi">
+                <div class="checkbox mt-3">
+                    <input type="checkbox" class="check" value=""> Prestasi
+                </div>
+                <button type="submit" class="btn btn-primary">Input Data</button>
+            </form>
+        </div>
+        <br><br>
+    </section>
+    <!--footer-->
+    <br><br>
+    <footer>
+        <div class="container">
+            <small>Copryright &copy 2021 All Right Reserved</small>
+        </div>
+    </footer>
+</body>
+
+</html>
