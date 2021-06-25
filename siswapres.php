@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/Logo SMANSA.ico">
 </head>
 
 <body>
@@ -22,12 +22,12 @@
     <!--header-->
     <div class="namapanjang">
         <div class="container">
-            <p1>OFFICIAL WEBSITE OF SMAN NEGERI PULAKANDANG</p1>
+            <p1>OFFICIAL WEBSITE OF SMAN 1 KESAMBEN</p1>
         </div>
     </div>
     <header>
         <div class="container">
-            <h1><a href="index.html">SMARIPULANG</a></h1>
+            <h1><a href="index.html">SMAN 1 KESAMBEN</a></h1>
             <ul>
                 <li><a href="index.php"><b>HOME</b></a></li>
                 <li class="active"><a href="listSiswa.php"><b>PELAYANAN</b></a></li>
@@ -49,7 +49,7 @@
                 <li><a href="ppdb.php">JADWAL PPDB</a></li>
                 <li class="active-service"><a href="siswapres.php">SISWA BERPRESTASI</a></li>
             </ul>
-            <h3 id="daftar">DAFTAR SISWA BERPRESTASI SMAN PULAKANDANG</h3>
+            <h3 id="daftar">DAFTAR SISWA BERPRESTASI SMAN 1 KESAMBEN</h3>
             <table class="table table-striped" style="font-size: 12px;">
                 <thead class="text-center">
                     <tr>

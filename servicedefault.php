@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/Logo SMANSA.ico">
 </head>
 
 <body>
@@ -22,12 +22,12 @@
     <!--header-->
     <div class="namapanjang">
         <div class="container">
-            <p1>OFFICIAL WEBSITE OF SMAN NEGERI PULAKANDANG</p1>
+            <p1>OFFICIAL WEBSITE OF SMAN 1 KESAMBEN</p1>
         </div>
     </div>
     <header>
         <div class="container">
-            <h1><a href="homeAdmin.php">SMARIPULANG</a></h1>
+            <h1><a href="homeAdmin.php">SMAN 1 KESAMBEN</a></h1>
             <ul>
                 <li><a href="homeAdmin.php"><b>HOME</b></a></li>
                 <li class="active"><a href="servicedefault.php"><b>PELAYANAN</b></a></li>
@@ -50,7 +50,7 @@
                 <li><a href="servicesiswapres.php">SISWA BERPRESTASI</a></li>
                 <li><a href="adminpagedefault.html">EDIT DATA</a></li>
             </ul>
-            <h3 id="daftar">LIST SISWA SMAN PULAKANDANG</h3>
+            <h3 id="daftar">LIST SISWA SMAN 1 KESAMBEN</h3>
             <table class="table table-striped" style="font-size: 12px;">
                 <thead>
                     <tr class="text-center">

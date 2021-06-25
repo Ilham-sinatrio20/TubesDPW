@@ -54,3 +54,25 @@ INSERT INTO admin VALUES
 	("ilham10@gmail.com", "Ilham Sinatrio Gumelar", "IlhamSG", "5758", "Blitar", "Laki-laki", "082338367643"),
     ("ferdyhp44@gmail.com", "Ferdy Hahan Pradana", "FerHP", "ferdy22", "Tulungagung", "Laki-laki", "087856725286");
 
+INSERT INTO ppdb (kegiatan, tanggal, tempat, keterangan) VALUES
+("Sosialisasi Juknis PPDB Jatim 2021", "Maret – April 2021", "Internet online", "Dilayani Pada Jam Kerja"),
+("Entry Nilai Rapor Oleh Kepala Sekolah SMP/Sederajat", "5 – 10 April 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Verifikasi Nilai Rapor Oleh Siswa", "12 – 14 April 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Pembetulan Nilai Rapor oleh Kepala Sekolah SMP/Sederajat", "12 – 17 April 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Pengambilan PIN", "19 April – 31 Mei 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Pendaftaran Jalur Afirmasi, Jalur Perpindahan Tugas Orang Tua/Wali, dan Jalur Prestasi Hasil Lomba", "3 – 4 Mei 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Verifikasi dan Validasi oleh SMA/SMK", "4 – 6 Mei 2021", "Internet online", "Sampai Jam 16.00 WIB"),
+("Pengumuman Jalur Afirmasi, Jalur Perpindahan Tugas Orang Tua/Wali, dan Jalur Prestasi Hasil Lomba", "7 Mei 2021", "Internet online", "Pukul 08.00 WIB"),
+("Konfirmasi oleh siswa yang diterima", "7 – 8 Mei 2021", "Internet online", "Sampai 23.59 WIB"),
+("Latihan Pendaftaran PPDB tahap II sampai dengan tahap V", "9 – 19 Mei 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Pendaftaran Jalur Prestasi Nilai Akademik SMA", "20-22 Mei 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Penutupan Jalur Prestasi Nilai Akademik SMA", "22 Mei 2021", "Internet Online", "Pukul 23.59 WIB"),
+("Pengumuman Jalur Prestasi Nilai Akademik SMA", "23 Mei 2021", "Internet Online", "Pukul 08.00 WIB"),
+("Konfirmasi oleh siswa yang diterima","23-24 Mei 2021", "Internet Online", "Pukul 08.00 WIB"),
+("Pendaftaran Jalur Zonasi SMA", "27-29 Mei 2021", "Internet online", "Mulai 01.00 – 23.59 WIB"),
+("Penutupan Jalur Zonasi SMA", "29 Mei 2021", "Internet Online", "Pukul 23.59 WIB"),
+("Pengumuman Jalur Zonasi SMA", "30 Mei 2021", "Internet Online", "Pukul 08.00 WIB"),
+("Konfirmasi oleh siswa yang diterima","30-31 Mei 2021", "Internet Online", "Pukul 08.00 WIB"),
+("DAFTAR ULANG ONLINE (dengan mengunggah surat keterangan lulus dari SMP/Sederajat)", "14-19 Juni 2021", "Internet Online", "Mulai 01.00 – 23.59 WIB"),
+("Verifikasi keaslian berkas oleh SMA/SMK sebelum dimulainya tahun pelajaran 2021/2022 dengan melaksanakan protokol kesehatan secara ketat.", "21-30 Juni 2021", "SMAN 1 Kesamben", "Dilayani pada Jam Kerja")
+;

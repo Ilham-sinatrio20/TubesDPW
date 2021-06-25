@@ -88,7 +88,8 @@ header ul li a:hover {
     /*settingan banner gambar sekolah*/
     height: 70vh;
     background-image: url(../img/ilus11copy3.jpg);
-    background-size: 1370px;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
