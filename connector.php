@@ -1,7 +1,7 @@
 <?php 
     $servername = "localhost";
     $username = "root";
-    $password = "ZeroTwo02";
+    $password = " ";
     $database = "tugas_besar_dpw";
 
     $connect = new mysqli($servername, $username, $password, $database);
